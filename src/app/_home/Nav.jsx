@@ -13,7 +13,7 @@ const Nav = () => {
     <nav className=" w-full fixed top-0 left-0 z-50 flex justify-center items-center">
       <div className="container mx-auto relative top-0 z-50">
         <nav className="flex justify-between px-2.5 py-2.5 items-center">
-          <div className="w-[187px]">
+          <div className="w-[187px] ">
             <Link href="/">
               <Image src={logo} alt="Logo" width={187} height={60} priority />
             </Link>

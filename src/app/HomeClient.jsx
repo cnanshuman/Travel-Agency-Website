@@ -4,6 +4,7 @@ import React from "react";
 import Nav from "./_home/Nav";
 import Hero from "./_home/Hero";
 import About from "./_home/About";
+import Car from "./_home/Car";
 
 const HomeClient = () => {
   return (
@@ -12,6 +13,7 @@ const HomeClient = () => {
         <Nav />
         <Hero />
         <About />
+        <Car />
       </main>
     </>
   );

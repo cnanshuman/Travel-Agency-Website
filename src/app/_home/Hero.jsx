@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Cookie } from "next/font/google";
+import { GoArrowUpRight } from "react-icons/go";
 
 const cookie = Cookie({
   subsets: ["latin"],
@@ -41,17 +42,17 @@ const Hero = () => {
           <li>
             <Link
               href="/book"
-              className="flex bg-[#ff2525] mx-1 rounded-lg text-white px-6 py-3 transition-all duration-300 hover:bg-[#ff3232]"
+              className="flex bg-[#ff2525] justify-center gap-1 items-center mx-1 rounded-lg text-white px-6 py-3 transition-all duration-300 hover:bg-[#ff3232]"
             >
-              Book a Trip Now
+              Book a Trip Now<GoArrowUpRight className="w-[18px] h-[18px] rotate-0" />
             </Link>
           </li>
           <li>
             <Link
               href="/packages"
-              className="flex bg-[#ededed] mx-1 rounded-lg text-[#222222] px-6 py-3 transition-all duration-300 hover:bg-[#ff3232] hover:text-white"
+              className="flex bg-[#ededed] mx-1 justify-center items-center gap-1 rounded-lg text-[#222222] px-6 py-3 transition-all duration-300 hover:bg-[#ff3232] hover:text-white"
             >
-              Explore Packages
+              Explore Packages<GoArrowUpRight className="w-[18px] h-[18px] rotate-0" />
             </Link>
           </li>
         </ul>
