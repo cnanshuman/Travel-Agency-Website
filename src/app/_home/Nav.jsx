@@ -46,7 +46,7 @@ const Nav = () => {
             <ul className="text-[13px] text-[#222222] font-medium flex">
               <li className="relative group">
                 <div className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer">
-                  <span className="px-4 py-3 flex items-center justify-center">
+                  <span className="px-3 py-2 flex items-center justify-center">
                     <GoPersonFill className="size-[20px]" />
                   </span>
                 </div>
@@ -57,7 +57,7 @@ const Nav = () => {
               <li className="flex bg-[#ff2525] text-white mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300">
                 <Link
                   href=""
-                  className="px-5 py-2 flex items-center justify-center"
+                  className="px-4 py-2 flex items-center justify-center"
                 >
                   Login{" "}
                   <span className="w-[2px] h-[20px] mx-1 bg-white rotate-6"></span>{" "}
