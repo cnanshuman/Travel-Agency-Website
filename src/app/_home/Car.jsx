@@ -7,7 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Car = () => {
   return (
-    <section className="bg-[#ededed] py-22 my-19">
+    <section className="bg-[#fafafa] py-22 my-19">
       <div className="container mx-auto px-4">
        
         <div className="flex flex-col md:flex-row justify-between items-center">

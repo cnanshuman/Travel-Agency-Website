@@ -65,7 +65,7 @@ const About = () => {
   return (
     <section
       ref={containerRef}
-      className="relative h-[100svh] w-full overflow-hidden  my-14 z-50 bg-[#f8f8f8]"
+      className="relative h-[100svh] w-full overflow-hidden  my-14 z-50 bg-[#fff]"
     >
       <div ref={trackRef} className="flex h-full will-change-transform">
         {/* === First Intro Section === */}

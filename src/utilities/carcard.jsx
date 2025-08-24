@@ -5,7 +5,7 @@ import Link from "next/link";
 const carcard = ({ item, index }) => {
   return (
     
-    <li className='group border border-[#d8d8d8] bg-white p-[18px] w-[24%] rounded-2xl  pb-8 overflow-hidden'>
+    <li className='group border border-[#e2e2e2] bg-white p-[18px] w-[24%] rounded-2xl  pb-8 overflow-hidden'>
       <Link href="/enquiry" target='_blank' className="block">
         <div className="overflow-hidden rounded-2xl">
           <Image
