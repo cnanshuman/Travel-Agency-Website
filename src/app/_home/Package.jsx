@@ -10,7 +10,7 @@ import Packagecard from "@/utilities/Packagecard";
 
 const Package = () => {
   return (
-    <div className="container mx-auto px-4 mt-28 ">
+    <div className="container mx-auto px-3 mt-28 ">
       {/* Heading */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-12">
         <div>

@@ -20,7 +20,7 @@ const Packagecard = ({ item }) => {
 
       
       <div className="absolute inset-0 bg-gradient-to-t from-black via-[black]/40 to-transparent flex flex-col justify-end p-5">
-        <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
+        <h1 className="text-2xl md:text-2xl font-medium text-white mb-2">
           {item.head}
         </h1>
         <Link

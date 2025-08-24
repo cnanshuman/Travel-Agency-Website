@@ -6,6 +6,7 @@ import Hero from "./_home/Hero";
 import About from "./_home/About";
 import Car from "./_home/Car";
 import Package from "./_home/Package";
+import Choose from "./_home/Choose";
 
 const HomeClient = () => {
   return (
@@ -16,6 +17,7 @@ const HomeClient = () => {
         <About />
         <Car />
         <Package />
+        <Choose />
       </main>
     </>
   );
