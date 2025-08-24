@@ -1,12 +1,16 @@
 
+import Image from 'next/image'
+import banaras from '../assests/images/banaras-1.jpg'
+import jodhpur from '../assests/images/jodhpur.jpg'
+
 export const data=[
-    {
+    {   img: banaras,
         video:"/banaras.mp4",
         head:"Banaras",
 
     },
 
-     {
+     {img:jodhpur,
         video:"/jodhpur.mp4",
         head:"Jodhpur",
 
