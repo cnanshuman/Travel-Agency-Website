@@ -25,23 +25,16 @@ const Nav = () => {
                 { name: "Our Vechicle", href: "/Our-Vechicle" },
                 { name: "Travel Package", href: "/Travel-Package" },
                 { name: "Happy Clients", href: "/Happy-Clients" },
-                { name: "Enquiry", href: "/Enquiry", blink: true }, // 👈 Blink
+                { name: "Enquiry", href: "/Enquiry" },
                 { name: "Contact Us", href: "/Contact-us" },
               ].map((link) => (
                 <li
                   key={link.href}
-                  className="flex mx-1 rounded-lg transition-all duration-300"
+                  className="flex bg-[#f8f8f8] mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300"
                 >
-                  <Link
-  href={link.href}
-  className={`px-4 py-2 rounded-lg ${
-    link.blink
-      ? "blink"
-      : "bg-[#f8f8f8] hover:bg-[#ff3232] hover:text-white"
-  }`}
->
-  {link.name}
-</Link>
+                  <Link href={link.href} className="px-4 py-2">
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

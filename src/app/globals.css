@@ -1,6 +1,4 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 * {
   scroll-behavior: smooth;
@@ -9,6 +7,7 @@
 html,
 body {
   height: 100%;
+  /* overflow: hidden;  */
   font-family: "Inter Tight", sans-serif;
   background-color: #fff;
   margin: 0 auto;
@@ -18,15 +17,13 @@ body {
   padding: 12px 22px;
   transition: 0.3s ease;
 }
-
 .swiper-button-prev {
   background-color: white;
-}
 
+}
 .swiper-button-next {
   background-color: red !important;
 }
-
 .swiper-button-prev,
 .swiper-button-next {
   width: 73px !important;
@@ -39,41 +36,20 @@ body {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
+  
   font-size: 24px !important;
 }
-
-.swiper-button-prev::after {
+.swiper-button-prev::after{
   color: red !important;
-  border-color: red;
-}
-
-.swiper-button-next::after {
+  border-color:red;
+};
+.swiper-button-next::after{
   color: rgb(255, 255, 255) !important;
-}
-
+};
 .swiper-button-prev {
   left: 10px !important;
 }
 
 .swiper-button-next {
   right: 10px !important;
-}
-
-@keyframes blink {
-  0% {
-    background-color: #ff2525;
-    color: #ffffff;
-  }
-  50% {
-    background-color: #ffffff;
-    color: #ff2525;
-  }
-  100% {
-    background-color: #ff2525;
-    color: #ffffff;
-  }
-}
-
-.blink {
-  animation: blink 1.5s ease-in-out infinite !important;
 }

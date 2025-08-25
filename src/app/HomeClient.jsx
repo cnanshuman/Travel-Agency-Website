@@ -8,6 +8,7 @@ import Car from "./_home/Car";
 import Package from "./_home/Package";
 import Choose from "./_home/Choose";
 import Services from "./_home/Services";
+import Enquiry from "./_home/Enquiry";
 
 const HomeClient = () => {
   return (
@@ -20,6 +21,7 @@ const HomeClient = () => {
         <Package />
         <Choose />
         <Services />
+        <Enquiry />
       </main>
     </>
   );
