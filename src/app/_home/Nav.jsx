@@ -102,22 +102,23 @@ const Nav = () => {
             </Link>
           </div>
 
-          {/* Main Navigation Links */}
+        
           <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
             <ul className="flex text-[14px] text-[#222222] font-medium">
               {[
                 { name: "About", href: "/About" },
-                { name: "Our Vehicle", href: "/Our-Vechicle" },
+
+                { name: "Our Vechicle", href: "/Our-Vechicle" },
                 { name: "Travel Package", href: "/Travel-Package" },
                 { name: "Happy Clients", href: "/Happy-Clients" },
-                { name: "Enquiry", href: "/Enquiry" },
+                { name: "Callery", href: "/Callery" },
                 { name: "Contact Us", href: "/Contact-us" },
               ].map((link) => (
                 <li
                   key={link.href}
-                  className="flex bg-[#f8f8f8] mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300 shadow hover:shadow-lg"
+                  className="flex bg-[#f8f8f8] mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300"
                 >
-                  <Link href={link.href} className="px-4 py-2 font-semibold">
+                  <Link href={link.href} className="px-4 py-2">
                     {link.name}
                   </Link>
                 </li>
