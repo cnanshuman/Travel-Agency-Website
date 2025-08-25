@@ -53,7 +53,7 @@ const Testimonial = () => {
       >
         <div className="container mx-auto max-w-7xl flex justify-center">
           {/* Review Form */}
-          <div className="bg-[#f1f1f1] p-8 z-[999] w-full max-w-[500px] rounded-lg shadow-lg">
+          <div className="bg-[#f1f1f1] p-8  w-full max-w-[500px] rounded-lg shadow-lg">
             <h1 className="text-[#121212] text-2xl font-semibold mb-6">
               Share Your Experience
             </h1>
