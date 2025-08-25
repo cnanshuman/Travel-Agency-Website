@@ -6,7 +6,7 @@ const Why = () => {
   return (
     <>
     <div className=" mt-23  ">
-      <div className="container mx-auto ">
+      <div className="container mx-auto p-4">
         <h1 className="text-[#090909] text-[3rem] font-bold leading-tight max-sm:text-3xl max-md:text-4xl">
         Your dream trip, planned in days and weeks
           <br className=" max-sm:hidden" /> <span className="text-[#ff2525]">—not months.</span>

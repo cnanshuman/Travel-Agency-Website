@@ -11,6 +11,7 @@ import Services from "./_home/Services";
 import Enquiry from "./_home/Enquiry";
 import Why from "./_home/Why";
 import Footer from "./_home/Footer";
+import Testimonial from "./_home/Testimonial";
 
 
 const HomeClient = () => {
@@ -26,6 +27,7 @@ const HomeClient = () => {
         <Services />
         <Enquiry />
         <Why />
+        <Testimonial />
         <Footer />
     
       </main>
