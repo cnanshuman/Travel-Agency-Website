@@ -9,6 +9,9 @@ import Package from "./_home/Package";
 import Choose from "./_home/Choose";
 import Services from "./_home/Services";
 import Enquiry from "./_home/Enquiry";
+import Why from "./_home/Why";
+import Footer from "./_home/Footer";
+
 
 const HomeClient = () => {
   return (
@@ -22,6 +25,9 @@ const HomeClient = () => {
         <Choose />
         <Services />
         <Enquiry />
+        <Why />
+        <Footer />
+    
       </main>
     </>
   );

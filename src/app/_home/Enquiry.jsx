@@ -5,7 +5,7 @@ const Enquiry = () => {
   return (
     <>
       <div
-        className="mt-18 h-screen bg-cover bg-center flex items-center justify-center bg-fixed"
+        className="mt-22 h-screen bg-cover bg-center flex items-center justify-center bg-fixed"
         style={{ backgroundImage: "url('/travel.jpg')" }}
       >
         <div className="container mx-auto max-w-7xl">

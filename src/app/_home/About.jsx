@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useRef, useLayoutEffect } from "react";
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
@@ -11,10 +10,7 @@ import img1 from "../../assests/images/img1.jpg";
 import img2 from "../../assests/images/img2.jpg";
 import img3 from "../../assests/images/img3.jpg";
 
-import img4 from '../../assests/images/img4.jpg';
-
-
-
+import img4 from "../../assests/images/img4.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,17 +61,18 @@ const About = () => {
   return (
     <section
       ref={containerRef}
-      className="relative h-[100svh] w-full overflow-hidden  my-14 z-50 bg-[#fff]"
+      className="relative h-[100svh] w-full overflow-hidden mt-19  z-50 bg-[#fff]"
     >
-      <div ref={trackRef} className="flex h-full will-change-transform">
-        {/* === First Intro Section === */}
+      <div
+        ref={trackRef}
+        className="flex  h-full will-change-transform items-center"
+      >
         <div className="min-w-[100vw] h-[100svh] flex items-center justify-center">
           <div className="container mx-auto  px-3.5">
-            <div className="flex justify-between">
-              <div>
-                <h1 className="text-[18px] flex items-center gap-x-4 text-[#00000080]">
-                 
-                  <HiOutlineBars3BottomLeft  className="text-[#00000080] size-6 " />
+            <div className="flex justify-between items-center ">
+              <div className=" self-start">
+                <h1 className="text-[18px] flex items-start gap-x-4 text-[#00000080]">
+                  <HiOutlineBars3BottomLeft className="text-[#00000080] size-6 " />
                   INTRODUCTION
                 </h1>
               </div>
@@ -91,9 +88,9 @@ const About = () => {
                         25 years
                       </span>{" "}
                       in the travel industry, our agency is renowned for
-                      excellence and reliability. We ensure a comfortable journey
-                      with our fleet of meticulously clean and well-maintained
-                      vehicles.
+                      excellence and reliability. We ensure a comfortable
+                      journey with our fleet of meticulously clean and
+                      well-maintained vehicles.
                     </p>
                     <ul className="flex gap-3">
                       <li>
@@ -110,22 +107,33 @@ const About = () => {
           </div>
         </div>
 
+        <div className="min-w-[100vw] flex items-top h-fit justify-left py-8  ">
+          <div className="flex gap-3">
+            <Image
+              src={img4}
+              alt="img4"
+              className="rounded-lg w-[440px] h-[649px]"
+            />
+            <div className="flex justify-center items-center mx-7">
+              <p className=" leading-12 text-[28px] font-normal xl:text-[20px] xl:leading-10 2xl:text-[28px] 2xl:leading-12 ">
+                Kulbir Traveller is dedicated to providing safe, reliable, and
+                comfortable travel experiences. With a fleet of well-maintained
+                vehicles and experienced drivers, we ensure every journey—local
+                or long-distance—is smooth and secure. Our focus on personalized
+                service and customer satisfaction makes every trip pleasant and
+                worry-free. We go beyond just transportation, offering a travel
+                experience built on care, comfort, and attention to detail—so
+                every ride feels effortless and enjoyable.
+              </p>
+            </div>
 
-
-<div className="min-w-[100vw] flex items-top h-fit justify-left py-8 ">
-  <div className="flex gap-3">
-   <Image src={img4} alt="img4" className="rounded-lg w-[440px] h-[649px]" />
- <div className="flex justify-center items-center mx-7">
-  <p className=" leading-12 text-[28px] font-normal xl:text-[20px] xl:leading-10 ">Kulbir Traveller is dedicated to providing safe, reliable, and comfortable travel experiences. With a fleet of well-maintained vehicles and experienced drivers, we ensure every journey—local or long-distance—is smooth and secure. Our focus on personalized service and customer satisfaction makes every trip pleasant and worry-free. We go beyond just transportation, offering a travel experience built on care, comfort, and attention to detail—so every ride feels effortless and enjoyable.</p>
-  
- </div>
-      
-   
-    <Image src={img3} alt="img3" className="rounded-lg w-[440px] h-[649px]" />
-    
-  </div>
-</div>
-
+            <Image
+              src={img3}
+              alt="img3"
+              className="rounded-lg w-[440px] h-[649px]"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
