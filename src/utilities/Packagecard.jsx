@@ -31,7 +31,7 @@ const Packagecard = ({ item }) => {
         <Image
           src={item.img}
           alt={item.head}
-          className="w-full h-fit object-cover absolute inset-0 group-hover:opacity-0 transition-opacity duration-500"
+          className="w-full h-[50vh] object-cover absolute inset-0 group-hover:opacity-0 transition-opacity duration-500"
         />
 
        
@@ -40,7 +40,7 @@ const Packagecard = ({ item }) => {
           loop
           muted
           playsInline
-          className="w-full h-[350px] object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="w-full h-[50vh] object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
           <source src={item.video} type="video/mp4" />
         </video>

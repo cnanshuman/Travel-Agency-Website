@@ -111,13 +111,12 @@ const About = () => {
         </div>
 
 
-        {/* === Last 3 Images in one row with gap-8 === */}
-{/* === Last 3 Images in one row with gap-8 === */}
+
 <div className="min-w-[100vw] flex items-top h-fit justify-left py-8 ">
   <div className="flex gap-3">
    <Image src={img4} alt="img4" className="rounded-lg w-[440px] h-[649px]" />
  <div className="flex justify-center items-center mx-7">
-  <p className=" leading-12 text-[28px] font-normal ">Kulbir Traveller is dedicated to providing safe, reliable, and comfortable travel experiences. With a fleet of well-maintained vehicles and experienced drivers, we ensure every journey—local or long-distance—is smooth and secure. Our focus on personalized service and customer satisfaction makes every trip pleasant and worry-free. We go beyond just transportation, offering a travel experience built on care, comfort, and attention to detail—so every ride feels effortless and enjoyable.</p>
+  <p className=" leading-12 text-[28px] font-normal xl:text-[20px] xl:leading-10 ">Kulbir Traveller is dedicated to providing safe, reliable, and comfortable travel experiences. With a fleet of well-maintained vehicles and experienced drivers, we ensure every journey—local or long-distance—is smooth and secure. Our focus on personalized service and customer satisfaction makes every trip pleasant and worry-free. We go beyond just transportation, offering a travel experience built on care, comfort, and attention to detail—so every ride feels effortless and enjoyable.</p>
   
  </div>
       

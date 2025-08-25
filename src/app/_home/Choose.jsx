@@ -40,7 +40,7 @@ const Choose = () => {
     <>
       <div className="bg-[#fafafa] py-22 mt-[100px]">
         <div className="container mx-auto px-6">
-          {/* Heading */}
+         
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div>
               <h1 className="text-[43px] font-black text-[#1B1917] mb-4 md:mb-0 leading-tight">
@@ -48,7 +48,7 @@ const Choose = () => {
                 <span className="text-[#00000080] block">One Click Away</span>
               </h1>
             </div>
-            <p className="w-full md:w-[20%] text-[18px] text-[#6c6c6c] leading-7">
+            <p className="w-full md:w-[40%] flex justify-end text-[18px] text-[#6c6c6c] leading-7">
               Curated luxury escapes designed to
               <br /> recharge your soul. From serene
               <br />
@@ -78,7 +78,7 @@ const Choose = () => {
                     </span>
                   </div>
                   <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-                  <p className="text-[#6c6c6c] text-[16px] leading-7">
+                  <p className="text-[#6c6c6c] text-[16px] leading-7 xl:line-clamp-3">
                     {card.desc}
                   </p>
                 </div>
@@ -90,7 +90,7 @@ const Choose = () => {
               <Image
                 src={beach}
                 alt="Beach"
-                className="rounded-2xl w-full h-full object-cover"
+                className="rounded-2xl w-full h-full object-cover xl:h-[80vh]"
               />
             </div>
           </div>

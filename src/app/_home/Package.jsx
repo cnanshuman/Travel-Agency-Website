@@ -10,8 +10,10 @@ import Packagecard from "@/utilities/Packagecard";
 
 const Package = () => {
   return (
+   
+    
     <div className="container mx-auto px-3 mt-28 ">
-      {/* Heading */}
+     
       <div className="flex flex-col md:flex-row justify-between items-center mb-12">
         <div>
           <h2 className="text-[#121212] text-[16px] uppercase tracking-wide">
@@ -30,13 +32,14 @@ const Package = () => {
         </Link>
       </div>
 
-      {/* Package Cards */}
+    
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 w-full">
         {data.map((item, index) => (
           <Packagecard key={index} item={item} />
         ))}
       </ul>
-    </div>
+   
+  </div>
   );
 };
 
