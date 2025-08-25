@@ -7,6 +7,7 @@ import About from "./_home/About";
 import Car from "./_home/Car";
 import Package from "./_home/Package";
 import Choose from "./_home/Choose";
+import Services from "./_home/Services";
 
 const HomeClient = () => {
   return (
@@ -18,6 +19,7 @@ const HomeClient = () => {
         <Car />
         <Package />
         <Choose />
+        <Services />
       </main>
     </>
   );

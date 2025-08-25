@@ -21,7 +21,7 @@ const Package = () => {
           </h2>
           <h1 className="text-[32px] md:text-[43px] font-black text-[#1B1917] leading-snug">
             Discover,{" "}
-            <span className="text-[#00000080]">Beyond the Destination</span>
+            <span className="text-[#ff2525]">Beyond the Destination</span>
           </h1>
         </div>
         <Link
