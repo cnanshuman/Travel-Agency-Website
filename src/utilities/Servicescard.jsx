@@ -1,3 +1,4 @@
+
 "use client";
 import React from "react";
 import Link from "next/link";
@@ -11,12 +12,22 @@ const Servicescard = ({ item }) => {
           <Image
             src={item.img}
             alt={item.head}
-            className="w-full h-[76vh] object-cover transform transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-[76vh] max-sm:h-[80vh] max-lg:h-[90vh] max-xl:h-[100vh] object-cover transform transition-transform duration-700 group-hover:scale-110"
           />
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex flex-col justify-end p-5">
-          <h1 className="text-4xl font-normal text-white mb-2">{item.head}</h1>
+    
+        <div
+          className="
+            absolute inset-0 
+            bg-gradient-to-t 
+            from-black/90 via-black/60 to-transparent
+            group-hover:from-black/60 group-hover:via-black/30 group-hover:to-transparent
+            transition-all duration-500
+            flex flex-col justify-end p-5
+          "
+        >
+          <h1 className="text-4xl font-normal text-white mb-2 max-sm:text-3xl max-lg:text-3xl">{item.head}</h1>
         </div>
       </Link>
     </li>

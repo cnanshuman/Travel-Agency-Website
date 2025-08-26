@@ -1,258 +1,100 @@
-// "use client";
-// import { GoPersonFill } from "react-icons/go";
-// import React from "react";
-// import Image from "next/image";
-// import Link from "next/link";
-// import logo from "@/assests/images/logo.png";
-// import { FaPhoneAlt } from "react-icons/fa";
-// import { IoLogoWhatsapp } from "react-icons/io";
-
-// const Nav = () => {
-//   return (
-//     <nav className="w-full fixed top-0 left-0 z-50 flex justify-center items-center">
-//       <div className="container mx-auto relative top-0 z-50">
-//         <nav className="flex justify-between px-4 py-3 items-center">
-//           {/* Logo */}
-//           <div className="w-[187px]">
-//             <Link href="/">
-//               <Image src={logo} alt="Logo" width={187} height={60} priority />
-//             </Link>
-//           </div>
-
-//           {/* Navigation Links */}
-//           <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
-//             <ul className="flex text-[14px] text-[#222222] font-medium">
-//               {[
-//                 { name: "About", href: "/About" },
-//                 { name: "Our Vechicle", href: "/Our-Vechicle" },
-//                 { name: "Travel Package", href: "/Travel-Package" },
-//                 { name: "Happy Clients", href: "/Happy-Clients" },
-//                 { name: "Enquiry", href: "/Enquiry", blink: true },
-//                 { name: "Contact Us", href: "/Contact-us" },
-//               ].map((link) => (
-//                 <li
-//                   key={link.href}
-//                   className={`flex bg-[#f8f8f8] mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300 ${
-//                     link.blink ? "blink-animation" : ""
-//                   }`}
-//                 >
-//                   <Link href={link.href} className="px-4 py-2">
-//                     {link.name}
-//                   </Link>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-
-//           {/* Right Side Icons */}
-//           <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
-//             <ul className="text-[13px] text-[#222222] font-medium flex items-center">
-//               {/* Profile Dropdown */}
-//               <li className="relative group">
-//                 <div className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center">
-//                   <GoPersonFill className="size-[20px]" />
-//                 </div>
-//                 <div className="absolute top-full left-0 mt-2 w-40 bg-white rounded-lg shadow-lg opacity-0 scale-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 z-50">
-//                   <ul className="flex flex-col">
-//                     <li className="px-4 py-2 hover:bg-[#ff3232] hover:text-white rounded-md transition-all cursor-pointer">
-//                       <Link href="/login">Login</Link>
-//                     </li>
-//                     <li className="px-4 py-2 hover:bg-[#ff3232] hover:text-white rounded-md transition-all cursor-pointer">
-//                       <Link href="/signup">Signup</Link>
-//                     </li>
-//                   </ul>
-//                 </div>
-//               </li>
-
-//               {/* Phone Call */}
-//               <li>
-//                 <a
-//                   href="tel:9810315052"
-//                   className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center"
-//                 >
-//                   <FaPhoneAlt className="size-[20px] text-[#2196f3] group-hover:text-white transition-colors duration-300" />
-//                 </a>
-//               </li>
-
-//               {/* WhatsApp */}
-//               <li>
-//                 <a
-//                   href="https://wa.me/919810315052"
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center"
-//                 >
-//                   <IoLogoWhatsapp className="size-[20px] text-[#25cc63] group-hover:text-white transition-colors duration-300" />
-//                 </a>
-//               </li>
-//             </ul>
-//           </div>
-//         </nav>
-//       </div>
-
-//       {/* CSS for blinking animation */}
-//       <style jsx>{`
-//         @keyframes blinkSmooth {
-//           0%, 100% { background-color: #f8f8f8; }
-//           50% { background-color: #ff3232; color: white; }
-//         }
-//         .blink-animation {
-//           animation: blinkSmooth 2s infinite;
-//         }
-//       `}</style>
-//     </nav>
-//   );
-// };
-
-// export default Nav;
 "use client";
 import { GoPersonFill } from "react-icons/go";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assests/images/logo.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { HiMenu, HiX } from "react-icons/hi";
 
 const Nav = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-white/50 backdrop-blur-md shadow-sm">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <div className="w-[150px] sm:w-[187px]">
-          <Link href="/">
-            <Image src={logo} alt="Logo" width={187} height={60} priority />
-          </Link>
-        </div>
+    <nav className="w-full hidden xl:flex fixed top-0 left-0 z-50  justify-center items-center">
+      <div className="container mx-auto relative top-0 z-50">
+        <nav className="flex justify-between px-4 py-3 items-center">
+          {/* Logo */}
+          <div className="w-[187px]">
+            <Link href="/">
+              <Image src={logo} alt="Logo" width={187} height={60} priority />
+            </Link>
+          </div>
 
-        {/* Desktop Nav Links */}
-        <div className="hidden md:block">
-          <ul className="flex text-sm lg:text-[14px] text-[#222222] font-medium">
-            {[
-              { name: "About", href: "/About" },
-              { name: "Our Vechicle", href: "/Our-Vechicle" },
-              { name: "Travel Package", href: "/Travel-Package" },
-              { name: "Happy Clients", href: "/Happy-Clients" },
-              { name: "Enquiry", href: "/Enquiry", blink: true },
-              { name: "Contact Us", href: "/Contact-us" },
-            ].map((link) => (
-              <li
-                key={link.href}
-                className={`flex bg-[#f8f8f8] mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300 ${
-                  link.blink ? "blink-animation" : ""
-                }`}
-              >
-                <Link href={link.href} className="px-4 py-2 block">
-                  {link.name}
-                </Link>
+          {/* Navigation Links */}
+          <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
+            <ul className="flex text-[14px] text-[#222222] font-medium">
+              {[
+                { name: "About", href: "/About" },
+                { name: "Our Vechicle", href: "/Our-Vechicle" },
+                { name: "Travel Package", href: "/Travel-Package" },
+                { name: "Happy Clients", href: "/Happy-Clients" },
+                { name: "Enquiry", href: "/Enquiry", blink: true },
+                { name: "Contact Us", href: "/Contact-us" },
+              ].map((link) => (
+                <li
+                  key={link.href}
+                  className={`flex bg-[#f8f8f8] mx-1 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300 ${
+                    link.blink ? "blink-animation" : ""
+                  }`}
+                >
+                  <Link href={link.href} className="px-4 py-2">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+         
+          <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
+            <ul className="text-[13px] text-[#222222] font-medium flex items-center">
+            
+              <li className="relative group">
+                <div className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center">
+                  <GoPersonFill className="size-[20px]" />
+                </div>
+                <div className="absolute top-full left-0 mt-2 w-40 bg-white rounded-lg shadow-lg opacity-0 scale-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 z-50">
+                  <ul className="flex flex-col">
+                    <li className="px-4 py-2 hover:bg-[#ff3232] hover:text-white rounded-md transition-all cursor-pointer">
+                      <Link href="/login">Login</Link>
+                    </li>
+                    <li className="px-4 py-2 hover:bg-[#ff3232] hover:text-white rounded-md transition-all cursor-pointer">
+                      <Link href="/signup">Signup</Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
-            ))}
-          </ul>
-        </div>
 
-        {/* Right Side Icons */}
-        <div className="hidden md:flex bg-white/20 backdrop-blur-md p-2 rounded-lg">
-          <ul className="text-[13px] text-[#222222] font-medium flex items-center">
-            {/* Profile Dropdown */}
-            <li className="relative group">
-              <div className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center">
-                <GoPersonFill className="size-[20px]" />
-              </div>
-              <div className="absolute top-full left-0 mt-2 w-40 bg-white rounded-lg shadow-lg opacity-0 scale-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 z-50">
-                <ul className="flex flex-col">
-                  <li className="px-4 py-2 hover:bg-[#ff3232] hover:text-white rounded-md transition-all cursor-pointer">
-                    <Link href="/login">Login</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-[#ff3232] hover:text-white rounded-md transition-all cursor-pointer">
-                    <Link href="/signup">Signup</Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
+              {/* Phone Call */}
+              <li>
+                <a
+                  href="tel:9810315052"
+                  className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center"
+                >
+                  <FaPhoneAlt className="size-[20px] text-[#2196f3] group-hover:text-white transition-colors duration-300" />
+                </a>
+              </li>
 
-            {/* Phone */}
-            <li>
-              <a
-                href="tel:9810315052"
-                className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center"
-              >
-                <FaPhoneAlt className="size-[20px] text-[#2196f3]" />
-              </a>
-            </li>
-
-            {/* WhatsApp */}
-            <li>
-              <a
-                href="https://wa.me/919810315052"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center"
-              >
-                <IoLogoWhatsapp className="size-[20px] text-[#25cc63]" />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Mobile Hamburger */}
-        <button
-          className="md:hidden p-2 rounded-lg bg-[#f8f8f8] shadow"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <HiX className="size-6" /> : <HiMenu className="size-6" />}
-        </button>
+              {/* WhatsApp */}
+              <li>
+                <a
+                  href="https://wa.me/919810315052"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex bg-[#f8f8f8] mx-1 rounded-lg shadow-sm hover:bg-[#ff3232] hover:text-white transition-all duration-300 cursor-pointer px-3 py-2 items-center"
+                >
+                  <IoLogoWhatsapp className="size-[20px] text-[#25cc63] group-hover:text-white transition-colors duration-300" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-lg shadow-md">
-          <ul className="flex flex-col text-sm text-[#222222] font-medium p-4 space-y-2">
-            {[
-              { name: "About", href: "/About" },
-              { name: "Our Vechicle", href: "/Our-Vechicle" },
-              { name: "Travel Package", href: "/Travel-Package" },
-              { name: "Happy Clients", href: "/Happy-Clients" },
-              { name: "Enquiry", href: "/Enquiry", blink: true },
-              { name: "Contact Us", href: "/Contact-us" },
-            ].map((link) => (
-              <li
-                key={link.href}
-                className={`px-4 py-2 rounded-lg hover:bg-[#ff3232] hover:text-white transition-all duration-300 ${
-                  link.blink ? "blink-animation" : ""
-                }`}
-              >
-                <Link href={link.href}>{link.name}</Link>
-              </li>
-            ))}
-
-            {/* Mobile Icons */}
-            <li className="flex gap-3 pt-4">
-              <a href="tel:9810315052" className="bg-[#f8f8f8] p-2 rounded-lg">
-                <FaPhoneAlt className="size-5 text-[#2196f3]" />
-              </a>
-              <a
-                href="https://wa.me/919810315052"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#f8f8f8] p-2 rounded-lg"
-              >
-                <IoLogoWhatsapp className="size-5 text-[#25cc63]" />
-              </a>
-              <Link href="/login" className="bg-[#f8f8f8] p-2 rounded-lg">
-                <GoPersonFill className="size-5" />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
 
       {/* CSS for blinking animation */}
       <style jsx>{`
         @keyframes blinkSmooth {
-          0%, 100% {
+          0%,
+          100% {
             background-color: #f8f8f8;
           }
           50% {

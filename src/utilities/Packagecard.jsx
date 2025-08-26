@@ -2,8 +2,8 @@
 "use client";
 import React, { useRef } from "react";
 import Link from "next/link";
-import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
+
 const Packagecard = ({ item }) => {
   const videoRef = useRef(null);
 
@@ -27,32 +27,28 @@ const Packagecard = ({ item }) => {
       onMouseLeave={handleMouseLeave}
     >
       <Link href="/enquiry" target="_blank" className="block relative">
-       
+      
         <Image
           src={item.img}
           alt={item.head}
-          className="w-full h-[50vh] object-cover absolute inset-0 group-hover:opacity-0 transition-opacity duration-500"
+          className="w-full h-[50vh] max-sm:h-[60vh] max-md:h-[80vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"
         />
 
-       
         <video
           ref={videoRef}
           loop
           muted
           playsInline
-          className="w-full h-[50vh] object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="w-full h-[50vh] max-sm:h-[60vh] max-md:h-[80vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"
         >
           <source src={item.video} type="video/mp4" />
         </video>
 
-       
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-[black]/40 to-transparent flex flex-col justify-end p-5">
-          <h1 className="text-2xl font-medium text-white mb-2">
+        
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-[black]/20 to-transparent flex flex-col justify-end p-5 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out">
+          <h1 className="text-2xl font-medium text-white mb-2 max-sm:text-[20px]">
             {item.head}
           </h1>
-          <span className="inline-flex items-center gap-2 text-sm font-normal text-white rounded-lg transition-all duration-300">
-            Put an Enquiry Now <GoArrowUpRight className="w-4 h-4" />
-          </span>
         </div>
       </Link>
     </li>

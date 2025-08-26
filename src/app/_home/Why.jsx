@@ -5,9 +5,9 @@ import Link from "next/link";
 const Why = () => {
   return (
     <>
-    <div className=" mt-23  ">
-      <div className="container mx-auto p-4">
-        <h1 className="text-[#090909] text-[3rem] font-bold leading-tight max-sm:text-3xl max-md:text-4xl">
+    <div className=" mt-23 max-sm:mt-30 ">
+      <div className="container mx-auto p-4 ">
+        <h1 className="text-[#090909] text-[3rem] font-bold leading-tight max-sm:text-3xl max-md:text-3xl max-lg:text-4xl">
         Your dream trip, planned in days and weeks
           <br className=" max-sm:hidden" /> <span className="text-[#ff2525]">—not months.</span>
         </h1>
@@ -20,7 +20,7 @@ const Why = () => {
                     <span className="text-[#7e7e81] font-medium text-[18px] mr-3.5">
                       01
                     </span>
-                    <p className="text-[1.5rem] font-medium text-[#090909] max-sm:text-[18px] max-md:text-[19px]">
+                    <p className=" text-[1.5rem] font-medium text-[#090909] max-sm:text-[15px] max-md:text-[15px]">
                     Booking A Taxi
                     </p>
                   </div>

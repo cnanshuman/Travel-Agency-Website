@@ -10,7 +10,7 @@ const Testimonial = () => {
   const [hover, setHover] = useState(null);
   const [expandedReview, setExpandedReview] = useState(null);
 
-  // Temporary local reviews (later replace with backend API)
+
   const reviews = [
     {
       id: 1,
@@ -46,20 +46,20 @@ const Testimonial = () => {
 
   return (
     <>
-      {/* Review Form Section (Old Design Restored) */}
+    
       <div
-        className="mt-22 min-h-[80vh] bg-cover bg-center flex items-center justify-center bg-fixed"
+        className="mt-22 min-h-[80vh] bg-cover bg-center flex items-center justify-center bg-fixed max-sm:pt-[30px] max-sm:pb-[30px] max-md:pt-[30px] max-md:pb-[30px] max-lg:pt-[30px] max-lg:pb-[30px] max-xl:pt-[50px] max-xl:pb-[50px]"
         style={{ backgroundImage: "url('/review.avif')" }}
       >
         <div className="container mx-auto max-w-7xl flex justify-center">
-          {/* Review Form */}
+         
           <div className="bg-[#f1f1f1] p-8  w-full max-w-[500px] rounded-lg shadow-lg">
             <h1 className="text-[#121212] text-2xl font-semibold mb-6">
               Share Your Experience
             </h1>
 
             <form className="grid grid-cols-1 gap-4">
-              {/* Star Rating */}
+             
               <div className="flex flex-col">
                 <label className="text-sm font-medium mb-2">Your Rating *</label>
                 <div className="flex space-x-2 text-2xl">
@@ -132,64 +132,69 @@ const Testimonial = () => {
       <span className="text-[#ff2525]">Happy Travelers</span>
     </h1>
     <Swiper
-      slidesPerView={3}
-      spaceBetween={30}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay]}
-      className="mySwiper"
-    >
-      {reviews.map((review) => {
-        // Decide if review is long enough to need "Read More"
-        const isLong = review.text.length > 180; // adjust this threshold to your design
+  slidesPerView={3}
+  spaceBetween={30}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+  }}
+  breakpoints={{
+    0: { slidesPerView: 1 },    // 📱 mobile: 1 card
+    768: { slidesPerView: 2 },  // 💻 tablets & md screens: 2 cards
+    1024: { slidesPerView: 3 }, // 🖥️ large screens: 3 cards
+  }}
+  modules={[Autoplay]}
+  className="mySwiper"
+>
+  {reviews.map((review) => {
+    const isLong = review.text.length > 180;
 
-        return (
-          <SwiperSlide key={review.id}>
-            <div
-              className={`bg-[#f1f1f1] border border-[#e2e2e2] p-6 rounded-2xl transition-all duration-500 flex flex-col justify-between ${
-                expandedReview === review.id ? "h-auto" : "h-[350px]"
-              }`}
+    return (
+      <SwiperSlide key={review.id}>
+        <div
+          className={`bg-[#f1f1f1] border border-[#e2e2e2] p-6 rounded-2xl transition-all duration-500 flex flex-col justify-between ${
+            expandedReview === review.id ? "h-auto" : "h-[350px]"
+          }`}
+        >
+          {/* Stars */}
+          <div className="flex mb-1 text-yellow-500 text-2xl">
+            {"★".repeat(review.rating)}
+            {"☆".repeat(5 - review.rating)}
+          </div>
+
+          {/* Review Text */}
+          <p
+            className={`text-[#121212] leading-7 mb-4 ${
+              expandedReview === review.id ? "" : "line-clamp-4"
+            }`}
+          >
+            “{review.text}”
+          </p>
+
+          {/* Read More Button */}
+          {isLong && (
+            <button
+              onClick={() =>
+                setExpandedReview(
+                  expandedReview === review.id ? null : review.id
+                )
+              }
+              className="text-[#ff2525] font-semibold text-sm hover:underline self-start"
             >
-              {/* Stars */}
-              <div className="flex mb-1 text-yellow-500 text-2xl">
-                {"★".repeat(review.rating)}
-                {"☆".repeat(5 - review.rating)}
-              </div>
+              {expandedReview === review.id ? "Read Less" : "Read More"}
+            </button>
+          )}
 
-              {/* Review Text */}
-              <p
-                className={`text-[#121212] leading-7 mb-4 ${
-                  expandedReview === review.id ? "" : "line-clamp-4"
-                }`}
-              >
-                “{review.text}”
-              </p>
+          {/* Reviewer Name */}
+          <h3 className="font-medium text-[19px] text-[#121212] mt-3">
+            {review.name}
+          </h3>
+        </div>
+      </SwiperSlide>
+    );
+  })}
+</Swiper>
 
-              {/* Read More Button (only if review is long) */}
-              {isLong && (
-                <button
-                  onClick={() =>
-                    setExpandedReview(
-                      expandedReview === review.id ? null : review.id
-                    )
-                  }
-                  className="text-[#ff2525] font-semibold text-sm hover:underline self-start"
-                >
-                  {expandedReview === review.id ? "Read Less" : "Read More"}
-                </button>
-              )}
-
-              {/* Reviewer Name */}
-              <h3 className="font-medium text-[19px] text-[#121212] mt-3">
-                {review.name}
-              </h3>
-            </div>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
   </div>
 </section>
 

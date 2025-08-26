@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="bg-black text-gray-300 py-12 px-6 mt-10">
       <div className="max-w-9xl mx-auto flex flex-col md:flex-row justify-between">
-        <div className="w-[full] md:w-[60%] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="w-[full] md:w-[60%] grid grid-cols-2 max-sm:grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h4 className="text-sm font-semibold text-gray-400 mb-4 tracking-wider">
               GENERAL

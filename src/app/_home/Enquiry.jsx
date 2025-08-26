@@ -5,11 +5,11 @@ const Enquiry = () => {
   return (
     <>
       <div
-        className="mt-22 h-screen bg-cover bg-center flex items-center justify-center bg-fixed"
+        className="mt-22 h-screen bg-cover bg-center flex items-center justify-center bg-fixed max-sm:pt-[250px] max-sm:mb-[380px] max-md:mt-[300px] max-md:mb-[270px] max-sm:mt-[90px]  "
         style={{ backgroundImage: "url('/travel.jpg')" }}
       >
-        <div className="container mx-auto max-w-7xl">
-          <div className="bg-[#f1f1f1] p-8 z-[999] ">
+        <div className="container mx-auto max-w-7xl ">
+          <div className="bg-[#f1f1f1] p-8 z-[999]  max-sm:mt-34  ">
             <h1 className="text-[#121212] text-2xl font-semibold mb-6">
               Book Your Enquiry Now
             </h1>

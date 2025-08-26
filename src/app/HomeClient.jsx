@@ -12,15 +12,16 @@ import Enquiry from "./_home/Enquiry";
 import Why from "./_home/Why";
 import Footer from "./_home/Footer";
 import Testimonial from "./_home/Testimonial";
-
+import MobileNav from "./_home/MobileNav";
 
 const HomeClient = () => {
   return (
     <>
       <main className=" relative w-full h-full">
         <Nav />
+        <MobileNav />
         <Hero />
-        <About />
+        {/* <About /> */}
         <Car />
         <Package />
         <Choose />
@@ -29,7 +30,6 @@ const HomeClient = () => {
         <Why />
         <Testimonial />
         <Footer />
-    
       </main>
     </>
   );

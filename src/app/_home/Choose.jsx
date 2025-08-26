@@ -40,29 +40,27 @@ const Choose = () => {
     <>
       <div className="bg-[#f3f3f4] py-22 mt-[100px]">
         <div className="container mx-auto px-6">
-         
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center max-sm:items-start max-md:items-start ">
             <div>
-              <h1 className="text-[43px] font-black text-[#1B1917] mb-4 md:mb-0 leading-tight">
+              <h1 className="text-[43px] font-black text-[#1B1917] mb-4 md:mb-0 leading-tight max-sm:text-[35px] max-sm:items-start">
                 Adventure is Just{" "}
                 <span className="text-[#ff2525] block">One Click Away</span>
               </h1>
             </div>
-            <p className="w-full md:w-[40%] flex justify-end text-[18px] text-[#6c6c6c] leading-7">
+            <p className="w-full md:w-[40%] flex justify-end text-[18px] text-[#6c6c6c] leading-7 max-sm:block max-md:block   ">
               Curated luxury escapes designed to
-              <br /> recharge your soul. From serene
-              <br />
+              <br className=" max-md:hidden max-lg:hidden" /> recharge your
+              soul. From serene
+              <br className=" max-md:hidden max-lg:hidden" />
               beaches to five-star retreats, we’ll get
-              <br />
+              <br className=" max-md:hidden max-lg:hidden" />
               you there in style.
             </p>
           </div>
 
           <div className="border border-[#e3e3e3] my-12"></div>
 
-          
-          <div className="flex flex-col md:flex-row gap-10 items-stretch">
-            
+          <div className="flex flex-col  gap-10 items-stretch   ">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
               {cards.map((card) => (
                 <div
@@ -85,7 +83,6 @@ const Choose = () => {
               ))}
             </div>
 
-          
             <div className="flex-1 h-full">
               <Image
                 src={beach}
