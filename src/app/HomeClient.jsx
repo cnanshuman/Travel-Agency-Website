@@ -13,6 +13,7 @@ import Why from "./_home/Why";
 import Footer from "./_home/Footer";
 import Testimonial from "./_home/Testimonial";
 import MobileNav from "./_home/MobileNav";
+import TourPackage from "./_home/TourPackage";
 
 const HomeClient = () => {
   return (
@@ -24,6 +25,7 @@ const HomeClient = () => {
         <About />
         <Car />
         <Package />
+        <TourPackage />
         <Choose />
         <Services />
         <Enquiry />

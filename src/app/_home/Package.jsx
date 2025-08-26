@@ -64,13 +64,13 @@ const Package = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mb-12 max-sm:items-start max-md:items-start max-md:mb-8 ">
         <div>
           <h2 className="text-[#121212] text-[16px] uppercase tracking-wide">
-            Our Travel Packages
+            Discover Your Trip
           </h2>
           <h1
             className="text-[32px] md:text-[43px] font-black text-[#1B1917] leading-tight max-md:text-[37px]"
           >
-            Discover,{" "}
-            <span className="text-[#ff2525]">Beyond the Destination</span>
+           Experience India’s{" "}
+            <span className="text-[#ff2525]"> Iconic Sights</span>
           </h1>
         </div>
 

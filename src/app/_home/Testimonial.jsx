@@ -48,7 +48,7 @@ const Testimonial = () => {
     <>
     
       <div
-        className="mt-22 min-h-[80vh] bg-cover bg-center flex items-center justify-center bg-fixed max-sm:pt-[30px] max-sm:pb-[30px] max-md:pt-[30px] max-md:pb-[30px] max-lg:pt-[30px] max-lg:pb-[30px] max-xl:pt-[50px] max-xl:pb-[50px]"
+        className="max-sm:px-4  mt-22 min-h-[80vh] bg-cover bg-center flex items-center justify-center bg-fixed max-sm:pt-[30px] max-sm:pb-[30px] max-md:pt-[30px] max-md:pb-[30px] max-lg:pt-[30px] max-lg:pb-[30px] max-xl:pt-[50px] max-xl:pb-[50px]"
         style={{ backgroundImage: "url('/review.avif')" }}
       >
         <div className="container mx-auto max-w-7xl flex justify-center">
@@ -58,7 +58,7 @@ const Testimonial = () => {
               Share Your Experience
             </h1>
 
-            <form className="grid grid-cols-1 gap-4">
+            <form className="grid grid-cols-1 gap-4 ">
              
               <div className="flex flex-col">
                 <label className="text-sm font-medium mb-2">Your Rating *</label>
@@ -124,7 +124,7 @@ const Testimonial = () => {
         </div>
       </div>
 
-      {/* Reviews Slider Section */}
+    
      <section className="py-16">
   <div className="container mx-auto px-4">
     <h1 className="text-[32px] md:text-[43px] font-black text-[#1B1917] leading-snug mb-10">
