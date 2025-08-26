@@ -21,7 +21,7 @@ const HomeClient = () => {
         <Nav />
         <MobileNav />
         <Hero />
-        {/* <About /> */}
+        <About />
         <Car />
         <Package />
         <Choose />

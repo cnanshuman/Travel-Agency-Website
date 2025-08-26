@@ -31,7 +31,7 @@ const Packagecard = ({ item }) => {
         <Image
           src={item.img}
           alt={item.head}
-          className="w-full h-[50vh] max-sm:h-[60vh] max-md:h-[80vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"
+          className="w-full h-[50vh] max-sm:h-[40vh] max-md:h-[50vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"
         />
 
         <video
@@ -39,14 +39,14 @@ const Packagecard = ({ item }) => {
           loop
           muted
           playsInline
-          className="w-full h-[50vh] max-sm:h-[60vh] max-md:h-[80vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"
+          className="w-full h-[50vh] max-sm:h-[40vh] max-md:h-[50vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"
         >
           <source src={item.video} type="video/mp4" />
         </video>
 
         
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-[black]/20 to-transparent flex flex-col justify-end p-5 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out">
-          <h1 className="text-2xl font-medium text-white mb-2 max-sm:text-[20px]">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-[black]/20 to-transparent flex flex-col justify-end p-5 max-sm:p-4 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out">
+          <h1 className="text-2xl font-medium text-white mb-2 max-sm:mb-0 max-sm:text-[20px]">
             {item.head}
           </h1>
         </div>
