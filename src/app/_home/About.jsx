@@ -65,7 +65,7 @@ const About = () => {
             <Image
               src={img4}
               alt="img4"
-              className="rounded-lg w-full h-auto max-h-[500px] object-cover"
+              className="rounded-lg w-full h-auto max-h-[600px] object-cover"
             />
           </div>
         </div>
