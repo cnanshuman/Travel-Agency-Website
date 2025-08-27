@@ -18,7 +18,7 @@ import TourPackage from "./_home/TourPackage";
 const HomeClient = () => {
   return (
     <>
-      <main className=" relative flex flex-col justify-center items-center w-full ">
+      <main className="  ">
         
         <Hero />
         <About />
