@@ -15,6 +15,9 @@ import Testimonial from "./_home/Testimonial";
 import MobileNav from "./_home/MobileNav";
 import TourPackage from "./_home/TourPackage";
 
+
+
+
 const HomeClient = () => {
   return (
     <>
@@ -31,6 +34,7 @@ const HomeClient = () => {
         <Enquiry />
         <Why />
         <Testimonial />
+      
         <Footer />
       </main>
     </>
