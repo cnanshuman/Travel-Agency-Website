@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono, Inter_Tight } from "next/font/google";
 import "./globals.css";
+import Nav from "./_home/Nav";
+import Footer from "./_home/Footer";
+import WhatsAppbutton from "./_home/Whatshappbutton";
+import MobileNav from "./_home/MobileNav";
 
 
 const geistSans = Geist({
@@ -21,24 +25,13 @@ const inter = Inter_Tight({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17000850069"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17000850069');
-          `}
-        </script>
-        
-      </head>
-      <body className={`${inter.className} antialiased relative`}>
-       
-         
-          {children}
-       
-       
+      <body className={` relative ${inter.className} antialiased relative`}>
+        <WhatsAppbutton />
+        <MobileNav />
+        <Nav />
+        {children}
+        <Footer />
+
       </body>
     </html>
   );

@@ -10,18 +10,19 @@ const carcard = ({ item, index }) => {
         <div className="overflow-hidden rounded-2xl">
           <Image
             src={item.img}
+            alt={item.head}
             className='rounded-2xl transform transition-transform duration-300 group-hover:scale-105'
           />
         </div>
         <h1 className='text-[#1B1917] text-2xl font-medium mb-2 mt-4'>{item.head}</h1>
         <h3 className='text-[14px] w-fit mb-3'>{item.para}</h3>
         
-        <Link
-          href="/enquiry"
+        <h2
+        
           className="text-[#121212] text-sm transition-all duration-300 mb-6 underline group-hover:text-[#ff2525]"
         >
           Put a Enquiry Now
-        </Link>
+        </h2>
       </Link>
     </li>
   )

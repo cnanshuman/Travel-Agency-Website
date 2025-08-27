@@ -23,7 +23,7 @@ const Nav = () => {
           <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
             <ul className="flex text-[14px] text-[#222222] font-medium">
               {[
-                { name: "About", href: "/About" },
+                { name: "About", href: "/about" },
                 { name: "Our Vechicle", href: "/Our-Vechicle" },
                 { name: "Travel Package", href: "/Travel-Package" },
                 { name: "Happy Clients", href: "/Happy-Clients" },

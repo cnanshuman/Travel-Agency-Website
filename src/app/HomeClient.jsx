@@ -15,15 +15,11 @@ import Testimonial from "./_home/Testimonial";
 import MobileNav from "./_home/MobileNav";
 import TourPackage from "./_home/TourPackage";
 
-
-
-
 const HomeClient = () => {
   return (
     <>
-      <main className=" relative w-full h-full">
-        <Nav />
-        <MobileNav />
+      <main className=" relative flex flex-col justify-center items-center w-full ">
+        
         <Hero />
         <About />
         <Car />
@@ -34,8 +30,7 @@ const HomeClient = () => {
         <Enquiry />
         <Why />
         <Testimonial />
-      
-        <Footer />
+        
       </main>
     </>
   );
