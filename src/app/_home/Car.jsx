@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { data } from "../../store/Cardata";
-import Carcard from "../../utilities/carcard";
+import Carcard from "../../utilities/Carcard";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Car = () => {

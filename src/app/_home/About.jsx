@@ -3,8 +3,7 @@ import React from "react";
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
 import { Cookie } from "next/font/google";
 import Image from "next/image";
-import { GoArrowUpRight } from "react-icons/go";
-import Link from "next/link";
+
 import img4 from "../../assests/images/img4.jpg";
 const cookie = Cookie({
   subsets: ["latin"],
@@ -51,13 +50,9 @@ const About = () => {
               every ride feels effortless and enjoyable.
             </p>
 
-            <Link
-            href="/about"
-            className="mt-4 w-fit hidden  lg:flex bg-[#ff2525] justify-center items-center gap-1 mx-1 rounded-lg text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#ff3232]"
-          >
-            Explore Now{" "}
-            <GoArrowUpRight className="w-4 sm:w-[18px] h-4 sm:h-[18px] rotate-0" />
-          </Link>
+          <p className="text-[18px] md:text-[16px] lg:text-[17px] leading-8 text-[#121212]">We offer comfortable 4-seater and 7-seater car services from Delhi to a variety of exciting destinations, including  <span
+                className={` text-[38px]  text-red-500/85 font-black ${cookie.className}`}
+              >Agra, Jaipur, Udaipur, Jaisalmer, Ranthambore, Shimla, Manali, Mussoorie, Nainital, and more. </span>Whether you’re exploring historic landmarks, enjoying picturesque landscapes, or visiting India’s revered holy sites, we ensure a smooth and pleasant journey tailored to your travel needs.</p>
           </div>
 
         

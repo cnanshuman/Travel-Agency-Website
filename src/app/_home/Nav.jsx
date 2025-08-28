@@ -12,23 +12,23 @@ const Nav = () => {
     <nav className="w-full hidden xl:flex fixed top-0 left-0 z-50  justify-center items-center">
       <div className="container mx-auto relative top-0 z-50">
         <nav className="flex justify-between px-4 py-3 items-center">
-          {/* Logo */}
+        
           <div className="w-[187px] bg-white/20 backdrop-blur-md p-2 rounded-lg">
             <Link href="/">
               <Image src={logo} alt="Logo" width={187} height={60} priority />
             </Link>
           </div>
 
-          {/* Navigation Links */}
+        
           <div className="bg-white/20 backdrop-blur-md p-2 rounded-lg">
             <ul className="flex text-[14px] text-[#222222] font-medium">
               {[
                 { name: "About", href: "/about" },
-                { name: "Our Vechicle", href: "/Our-Vechicle" },
-                { name: "Travel Package", href: "/Travel-Package" },
-                { name: "Happy Clients", href: "/Happy-Clients" },
-                { name: "Enquiry", href: "/Enquiry", blink: true },
-                { name: "Contact Us", href: "/Contact-us" },
+                { name: "Our Vechicle", href: "/vechicle" },
+                { name: "Travel Package", href: "/travel" },
+                { name: "Happy Clients", href: "/client" },
+                { name: "Enquiry", href: "/enquiry", blink: true },
+                { name: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <li
                   key={link.href}

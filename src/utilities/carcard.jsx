@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import Link from "next/link";
 
-const carcard = ({ item, index }) => {
+const Carcard = ({ item, index }) => {
   return (
     
     <li className='max-md:mb-[17px] group border border-[#e2e2e2] bg-white p-[18px] w-[24%] max-sm:justify-left max-sm:w-fit max-md:w-12/25  max-lg:w-[350px] max-sm:mb-[12px] rounded-2xl  pb-8 overflow-hidden max-xl:w-[308px]'>
@@ -28,4 +28,4 @@ const carcard = ({ item, index }) => {
   )
 }
 
-export default carcard
+export default Carcard
