@@ -8,19 +8,38 @@ const TourPackagecard = ({ item }) => {
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <>
       <li
         className="group relative rounded-[12px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-black cursor-pointer"
         onClick={openModal}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <Image
-          src={item.img}
-          alt={item.head}
-          width={301}
-          height={366}
-          className="w-full h-[60vh] max-sm:h-[70vh] max-md:h-[70vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover"
-        />
+        {isHovered && item.video ? (
+          <video
+            src={item.video}
+            width={301}
+            height={366}
+            className="w-full h-[60vh] max-sm:h-[70vh] max-md:h-[70vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={item.img}
+          />
+        ) : (
+          <Image
+            src={item.img}
+            alt={item.head}
+            width={301}
+            height={366}
+            className="w-full h-[60vh] max-sm:h-[70vh] max-md:h-[70vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover"
+          />
+        )}
 
         <div className="absolute inset-0 bg-gradient-to-t from-black via-[black]/50 to-transparent flex flex-col justify-end p-5 max-sm:p-4">
           <h3 className="text-2xl font-medium text-white mb-1 max-sm:text-[21px] max-sm:mb-2">
