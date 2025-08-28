@@ -130,7 +130,7 @@ function Footer() {
               <Link href="/privacy" className="hover:text-white">
                 Privacy
               </Link>
-              <Link href="/terms" className="hover:text-white">
+              <Link href="/term" className="hover:text-white">
                 Terms & Condition
               </Link>
             </div>
