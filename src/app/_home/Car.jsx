@@ -20,7 +20,6 @@ const Car = () => {
             </h1>
           </div>
 
-          
           <Link
             href="/vechicle"
             className="hidden lg:flex bg-[#ff2525] justify-center items-center gap-1 mx-1 rounded-lg text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#ff3232]"
