@@ -41,7 +41,7 @@ const Hero = () => {
         <ul className="flex max-sm:flex-col  mt-6 text-[14px]">
           <li className=" max-sm:w-full max-sm: mb-[12px] ">
             <Link
-              href="/book"
+              href="/enquiry"
               className="flex bg-[#ff2525] justify-center gap-1 items-center mx-1 rounded-lg text-white px-6 py-3 transition-all duration-300 hover:bg-[#ff3232]"
             >
               Book a Trip Now<GoArrowUpRight className="w-[18px] h-[18px] rotate-0" />
@@ -49,7 +49,7 @@ const Hero = () => {
           </li>
           <li>
             <Link
-              href="/packages"
+              href="/travel"
               className="flex bg-[#ededed] mx-1 justify-center items-center gap-1 rounded-lg text-[#222222] px-6 py-3 transition-all duration-300 hover:bg-[#ff3232] hover:text-white"
             >
               Explore Packages<GoArrowUpRight className="w-[18px] h-[18px] rotate-0" />

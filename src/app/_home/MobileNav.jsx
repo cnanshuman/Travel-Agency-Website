@@ -40,12 +40,12 @@ const MobileNav = () => {
 
   
   const navLinks = [
-    { name: "About", href: "/About" },
-    { name: "Our Vehicle", href: "/Our-Vehicle" },
-    { name: "Travel Package", href: "/Travel-Package" },
-    { name: "Happy Clients", href: "/Happy-Clients" },
-    { name: "Enquiry", href: "/Enquiry", blink: true },
-    { name: "Contact Us", href: "/Contact-us" },
+    { name: "About", href: "/about" },
+    { name: "Our Vechicle", href: "/vechicle" },
+    { name: "Travel Package", href: "/travel" },
+    { name: "Happy Clients", href: "/client" },
+    { name: "Enquiry", href: "/enquiry", blink: true },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (

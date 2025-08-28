@@ -50,7 +50,9 @@ const TourPackage = () => {
       >
         Explore Now <GoArrowUpRight className="w-[18px] h-[18px]" />
       </Link>
-    </div></>
+    </div>
+    
+    </>
   );
 };
 

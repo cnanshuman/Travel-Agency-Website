@@ -9,6 +9,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import Choose from "@/app/_home/Choose";
 import Services from "@/app/_home/Services";
 import Enquiry from "@/app/_home/Enquiry";
+import Why from "@/app/_home/Why";
 
 const Vechicleinr = () => {
   return (
@@ -19,10 +20,10 @@ const Vechicleinr = () => {
         style={{
           backgroundImage: `url(/vechicle-bnr.jpg)`,
         }}
-        className="relative bnr bg-cover bg-center bg-no-repeat w-full h-[400px] overflow-hidden"
+        className="relative bnr  bg-cover bg-center bg-no-repeat w-full h-[400px] overflow-hidden"
       >
-        <div className="container relative z-10 h-full flex items-center justify-center">
-          <h1 className="text-white text-8xl font-bold">Our Vechicle</h1>
+        <div className="container mx-auto p-4 relative z-10 h-full flex items-center justify-center">
+          <h1 className="text-white  max-md:text-5xl text-8xl font-bold">Our Vechicle</h1>
         </div>
       </div>
 
@@ -52,7 +53,7 @@ const Vechicleinr = () => {
    
 <Services />
 <Enquiry />
-
+<Why />
 
    </>
   )

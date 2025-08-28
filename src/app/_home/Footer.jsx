@@ -23,10 +23,10 @@ function Footer() {
                     <Link href="/about">About</Link>
                   </li>
                   <li>
-                    <Link href="/how-it-works">Travel Package</Link>
+                    <Link href="/travel">Travel Package</Link>
                   </li>
                   <li>
-                    <Link href="/testimonials">Our Vehicle</Link>
+                    <Link href="/vechicle">Our Vehicle</Link>
                   </li>
                 </ul>
               </div>
@@ -37,13 +37,14 @@ function Footer() {
                 </h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/testimonials">Happy Client</Link>
+                    <Link href="/client">Happy Client</Link>
+                  </li>
+                 
+                  <li>
+                    <Link href="/enquiry">Enquiry</Link>
                   </li>
                   <li>
-                    <Link href="/testimonials">Review</Link>
-                  </li>
-                  <li>
-                    <Link href="/testimonials">Enquiry</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -54,16 +55,16 @@ function Footer() {
                 </h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/free-content">Sedan (Indigo/Etios/Dzire)</Link>
+                    <Link href="/enquiry">Sedan (Indigo/Etios/Dzire)</Link>
                   </li>
                   <li>
-                    <Link href="/glossary">Tempo Traveller</Link>
+                    <Link href="/enquiry">Tempo Traveller</Link>
                   </li>
                   <li>
-                    <Link href="/tutorials">SUV</Link>
+                    <Link href="/enquiry">SUV</Link>
                   </li>
                   <li>
-                    <Link href="/tutorials">Other</Link>
+                    <Link href="/enquiry">Other</Link>
                   </li>
                 </ul>
               </div>
