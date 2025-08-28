@@ -1,9 +1,8 @@
-
 "use client";
 import React from "react";
 import Link from "next/link";
-import { data } from "@/store/Cardata";
-import Carcard from "@/utilities/Carcard";
+import { data } from "../../store/Cardata";
+import Carcard from "../../utilities/Carcard";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Car = () => {
@@ -26,7 +25,7 @@ const Car = () => {
             href="/vechicle"
             className="hidden lg:flex bg-[#ff2525] justify-center items-center gap-1 mx-1 rounded-lg text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#ff3232]"
           >
-            Explore Now{" "}
+            {"Explore Now "}
             <GoArrowUpRight className="w-4 sm:w-[18px] h-4 sm:h-[18px] rotate-0" />
           </Link>
         </div>
@@ -37,7 +36,6 @@ const Car = () => {
           ))}
         </ul>
 
-       
         <Link
           href="/vechicle"
           className="flex lg:hidden mt-7 bg-[#ff2525] justify-center items-center gap-2 rounded-lg text-white px-6 py-3 text-base font-semibold transition-all duration-300 hover:bg-[#ff3232]"
