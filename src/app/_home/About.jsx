@@ -60,6 +60,8 @@ const About = () => {
             <Image
               src={img4}
               alt="img4"
+              width={467}
+              height={687}
               className="rounded-lg w-full h-auto max-h-[600px] object-cover"
             />
           </div>

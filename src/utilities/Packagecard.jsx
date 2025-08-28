@@ -31,6 +31,8 @@ const Packagecard = ({ item }) => {
         <Image
           src={item.img}
           alt={item.head}
+          width={360}
+          height={439}
           className="w-full h-[50vh] max-sm:h-[40vh] max-md:h-[50vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"
         />
 

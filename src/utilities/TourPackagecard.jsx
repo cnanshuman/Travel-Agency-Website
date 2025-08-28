@@ -17,6 +17,8 @@ const TourPackagecard = ({ item }) => {
         <Image
           src={item.img}
           alt={item.head}
+          width={301}
+          height={366}
           className="w-full h-[60vh] max-sm:h-[70vh] max-md:h-[70vh] max-lg:h-[80vh] max-xl:h-[70vh] object-cover"
         />
 

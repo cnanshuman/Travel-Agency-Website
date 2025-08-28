@@ -11,6 +11,8 @@ const Carcard = ({ item, index }) => {
           <Image
             src={item.img}
             alt={item.head}
+            width={336}
+            height={261}
             className='rounded-2xl transform transition-transform duration-300 group-hover:scale-105'
           />
         </div>

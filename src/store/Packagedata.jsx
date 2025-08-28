@@ -26,7 +26,7 @@ export const data=[
 
 
      {img:tajmahal,
-        video:"/tajmahal.webm",
+        video:"/tajmahal.mp4",
         head:"Taj Mahal",
 
     },
@@ -58,7 +58,7 @@ export const data=[
 
 
      {img:jas,
-        video:"/jais.webm",
+        video:"/jais.mp4",
         head:"Jaisalmer Fort",
 
     },
@@ -69,7 +69,7 @@ export const data=[
 
     },
      {img:chit,
-        video:"/chit.webm",
+        video:"/chit.mp4",
         head:"Chittorgarh Fort",
 
     },

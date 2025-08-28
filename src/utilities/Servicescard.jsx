@@ -12,6 +12,8 @@ const Servicescard = ({ item }) => {
           <Image
             src={item.img}
             alt={item.head}
+            width={617}
+            height={460}
             className="w-full h-[76vh] max-sm:h-[80vh] max-lg:h-[90vh] max-xl:h-[100vh] object-cover transform transition-transform duration-700 group-hover:scale-110"
           />
         </div>
