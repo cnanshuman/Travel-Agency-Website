@@ -1,9 +1,11 @@
 import React from 'react'
-import About from './_section/About'
+import Aboutinr from './_section/Aboutinr'
 
 const page = () => {
   return (
-    <About />
+    <Aboutinr />
+   
+    
   )
 }
 
