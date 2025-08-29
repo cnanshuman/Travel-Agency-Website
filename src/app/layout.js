@@ -17,17 +17,30 @@ const geistMono = Geist_Mono({
 
 const inter = Inter_Tight({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+  ],
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased relative`}>
+      <body
+        className={`${inter.className} antialiased relative`}
+        suppressHydrationWarning
+      >
         <WhatsAppbutton />
         <MobileNav />
         <Nav />
-        <div suppressHydrationWarning>
+        <div>
           {children}
         </div>
         <Footer />

@@ -1,10 +1,18 @@
 "use client";
 import React from "react";
-import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
+import dynamic from "next/dynamic"; // ✅ for dynamic imports
 import { Cookie } from "next/font/google";
 import Image from "next/image";
-import img4 from "../../assests/images/img4.jpg";
 
+// ✅ Lazy load the icon (don’t bundle unless needed)
+const HiOutlineBars3BottomLeft = dynamic(
+  () => import("react-icons/hi2").then((mod) => mod.HiOutlineBars3BottomLeft),
+  { ssr: false }
+);
+
+// ✅ Load image from public/ instead of importing into JS bundle
+// Move img4.jpg → /public/images/img4.jpg
+// That way Next.js <Image> optimizes it and reduces JS size
 const cookie = Cookie({
   subsets: ["latin"],
   weight: ["400"],
@@ -69,12 +77,12 @@ const About = () => {
           {/* Right Image */}
           <div className="lg:w-5/12 max-sm:w-full">
             <Image
-              src={img4}
+              src="/img4.jpg" // ✅ served from public/, better optimization
               alt="Kulbir Traveller"
               width={467}
               height={687}
               className="rounded-lg w-full h-auto max-h-[600px] object-cover"
-              priority
+              loading="lazy" // ✅ load only when in viewport
             />
           </div>
         </div>
