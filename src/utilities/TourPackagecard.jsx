@@ -78,6 +78,8 @@ const TourPackagecard = ({ item }) => {
             >
               {item.details}
             </div>
+
+            
           </div>
         </div>
       )}
