@@ -1,0 +1,36 @@
+{
+  "name": "travel-agency",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@next/bundle-analyzer": "^15.5.2",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@studio-freight/lenis": "^1.0.42",
+    "class-variance-authority": "^0.7.1",
+    "flatpickr": "^4.6.13",
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.542.0",
+    "next": "^15.5.11",
+    "ogl": "^1.0.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-flatpickr": "^4.0.11",
+    "react-icons": "^5.5.0",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.0",
+    "tw-animate-css": "^1.3.7"
+  }
+}
