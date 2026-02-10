@@ -5,6 +5,7 @@
 @import "tw-animate-css";
 
 /* ... keep your other code ... */
+<<<<<<< HEAD
 /* Fix font for all inputs, selects, textareas, flatpickr */
 .font-custom {
   font-family: 'Inter Tight', sans-serif !important;
@@ -22,6 +23,8 @@
   font-size: 27px;
   font-weight: 800;
 }
+=======
+>>>>>>> 25763b70ac69ad78fb79ed68515bc58dfcb0ced2
 
 html,
 body {
